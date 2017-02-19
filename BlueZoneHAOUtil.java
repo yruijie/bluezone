@@ -129,9 +129,11 @@ class BlueZoneHAOUtil {
 	/**
 	 * Set the cursor's column position. This property is 0-Base for VT/6530
 	 * sessions and 1-Base for all other session types.
-	 * @param colVal rowVal Specify the new column position.
+	 * 
+	 * @param colVal
+	 *            rowVal Specify the new column position.
 	 */
-	public void setCursorColumn(int colVal) { 
+	public void setCursorColumn(int colVal) {
 		Dispatch.call(bzhao, "CursorColumn", colVal);
 
 	}
@@ -150,9 +152,11 @@ class BlueZoneHAOUtil {
 	/**
 	 * Set the cursor's row position. This property is 0-Base for VT/6530
 	 * sessions and 1-Base for all other session types.
-	 * @param rowVal Specify the new row position.
+	 * 
+	 * @param rowVal
+	 *            Specify the new row position.
 	 */
-	public void setCursorRow(int rowVal) { 
+	public void setCursorRow(int rowVal) {
 		Dispatch.call(bzhao, "CursorRow", rowVal);
 	}
 
@@ -220,10 +224,9 @@ class BlueZoneHAOUtil {
 	}
 
 	/*
-	public void field() { 
-		Dispatch.call(bzhao, "Field", new Object[] { new Variant(), new Variant() });
-	}
-	//*/
+	 public void field() { Dispatch.call(bzhao, "Field", new Object[] { new
+	 Variant(), new Variant() }); } 
+	 //*/
 
 	/**
 	 * Controls window and keyboard focus.
@@ -248,24 +251,25 @@ class BlueZoneHAOUtil {
 	}
 
 	/*
-	 * // YRJTest: need to test how this method works. Seems it set two values
-	 * and // returns a return code. public int getCursor() { Variant retValue =
-	 * Dispatch.call(bzhao, "GetCursor", new Object[] { new Variant(), new
-	 * Variant() }); return retValue.getInt(); }
-	 * 
-	 * 
-	 * // YRJTest necessary? public String getFolderName() { Variant retValue =
-	 * Dispatch.call(bzhao, "GetFolderName", new Object[] { new Variant(), new
-	 * Variant() }); return retValue.toString(); }
-	 * 
-	 * // YRJTest necessary? public String getOpenFilename() { Variant retValue
-	 * = Dispatch.call(bzhao, "GetOpenFilename", new Object[] { new Variant(),
-	 * new Variant() }); return retValue.toString(); }
-	 * 
-	 * // YRJTest necessary? public String getSaveAsFilename() { Variant
-	 * retValue = Dispatch.call(bzhao, "GetSaveAsFilename", new Object[] { new
-	 * Variant(), new Variant() }); return retValue.toString(); } //
-	 */
+	 // YRJTest: need to test how this method works. Seems it set two values  and 
+	 // returns a return code. 
+	 public int getCursor() { Variant retValue = Dispatch.call(bzhao, "GetCursor", new Object[] { new Variant(), 
+	 new Variant() }); return retValue.getInt(); }
+	  
+	  
+	 // YRJTest necessary? 
+	  public String getFolderName() { Variant retValue = Dispatch.call(bzhao, "GetFolderName", new Object[] { new Variant(), new
+	 Variant() }); return retValue.toString(); }
+	 
+	 // YRJTest necessary? 
+	  public String getOpenFilename() { Variant retValue = Dispatch.call(bzhao, "GetOpenFilename", new Object[] { new Variant(),
+	 new Variant() }); return retValue.toString(); }
+	  
+	// YRJTest necessary? 
+	 public String getSaveAsFilename() { Variant
+	 retValue = Dispatch.call(bzhao, "GetSaveAsFilename", new Object[] { new
+	 Variant(), new Variant() }); return retValue.toString(); } 
+	 //*/
 
 	/**
 	 * Returns the session identifier (1,2,3,etc.) of the currently connected
@@ -308,18 +312,15 @@ class BlueZoneHAOUtil {
 	}
 
 	/*
-	 * 
-	 * public int ifLogExists() { Variant retValue = Dispatch.call(bzhao,
-	 * "IfLogExists", new Object[] { new Variant(), new Variant() }); return
-	 * retValue.getInt(); }
-	 * 
-	 * 
-	 * 
-	 * public String inputBox(String promptStr, String defaultStr) { Variant
-	 * retValue = Dispatch.call(bzhao, "InputBox", new Object[] { new
-	 * Variant(promptStr), new Variant(defaultStr) }); return
-	 * retValue.toString(); } //
-	 */
+	 public int ifLogExists() { Variant retValue = Dispatch.call(bzhao,
+	 "IfLogExists", new Object[] { new Variant(), new Variant() }); return
+	 retValue.getInt(); }
+	  
+	 public String inputBox(String promptStr, String defaultStr) { Variant
+	 retValue = Dispatch.call(bzhao, "InputBox", new Object[] { new
+	 Variant(promptStr), new Variant(defaultStr) }); return
+	 retValue.toString(); } 
+	 //*/
 
 	/**
 	 * Used to lock or unlock the BlueZone session's keyboard.
@@ -342,20 +343,20 @@ class BlueZoneHAOUtil {
 	}
 
 	/*
-	 * 
-	 * // YRJTest: is this method necessary?
-	 * 
-	 * public int msgBox(String messageStr, int flagsVal) { Variant retValue =
-	 * Dispatch.call(bzhao, "MsgBox", new Object[] { new Variant(messageStr),
-	 * new Variant(flagsVal) }); return retValue.getInt(); }
-	 * 
-	 * // YRJTest: is this method necessary?
-	 * 
-	 * public int msgBox(String messageStr, int flagsVal, String title) {
-	 * Variant retValue = Dispatch.call(bzhao, "MsgBox", new Object[] { new
-	 * Variant(messageStr), new Variant(flagsVal), new Variant(title) }); return
-	 * retValue.getInt(); } //
-	 */
+	  
+	 // YRJTest: is this method necessary?
+	  
+	 public int msgBox(String messageStr, int flagsVal) { Variant retValue =
+	  Dispatch.call(bzhao, "MsgBox", new Object[] { new Variant(messageStr),
+	 new Variant(flagsVal) }); return retValue.getInt(); }
+	  
+	 // YRJTest: is this method necessary?
+	  
+	 public int msgBox(String messageStr, int flagsVal, String title) {
+	 Variant retValue = Dispatch.call(bzhao, "MsgBox", new Object[] { new
+	 Variant(messageStr), new Variant(flagsVal), new Variant(title) }); return
+	 retValue.getInt(); } 
+	 //*/
 
 	/**
 	 * Launches a new emulation session.
@@ -653,10 +654,10 @@ class BlueZoneHAOUtil {
 	}
 
 	/*
-	 * public int receiveFile(String receiveStr) { Variant retValue =
-	 * Dispatch.call(bzhao, "ReceiveFile", receiveStr ); return
-	 * retValue.getInt(); } //
-	 */
+	 public int receiveFile(String receiveStr) { Variant retValue =
+	 Dispatch.call(bzhao, "ReceiveFile", receiveStr ); return
+	 retValue.getInt(); } 
+	  //*/
 
 	/**
 	 * Executes a program.
@@ -674,37 +675,36 @@ class BlueZoneHAOUtil {
 	}
 
 	/*
-	 * public void runExternalMacro(String projectStr, String macroStr) {
-	 * Dispatch.call(bzhao, "RunExternalMacro", new Object[] { new
-	 * Variant(projectStr), new Variant(macroStr) });
-	 * 
-	 * }
-	 * 
-	 * public void runExternalMacro(String projectStr, String macroStr, String
-	 * macroParmStr) { Dispatch.call(bzhao, "RunExternalMacro", new Object[] {
-	 * new Variant(projectStr), new Variant(macroStr), new Variant(macroParmStr)
-	 * });
-	 * 
-	 * }
-	 * 
-	 * public void runMacro(String macroStr) { Dispatch.call(bzhao, "RunMacro",
-	 * macroStr);
-	 * 
-	 * }
-	 * 
-	 * public void runMacro(String macroStr, String macroParmStr) {
-	 * Dispatch.call(bzhao, "RunMacro", new Object[] { new Variant(macroStr),
-	 * new Variant(macroParmStr) });
-	 * 
-	 * }
-	 * 
-	 * public void runScript(String scriptStr) { Dispatch.call(bzhao,
-	 * "RunScript", scriptStr);
-	 * 
-	 * }
-	 * 
-	 * //
-	 */
+	 public void runExternalMacro(String projectStr, String macroStr) {
+	 Dispatch.call(bzhao, "RunExternalMacro", new Object[] { new
+	 Variant(projectStr), new Variant(macroStr) });
+	  
+	  }
+	  
+	  public void runExternalMacro(String projectStr, String macroStr, String
+	  macroParmStr) { Dispatch.call(bzhao, "RunExternalMacro", new Object[] {
+	  new Variant(projectStr), new Variant(macroStr), new Variant(macroParmStr)
+	  });
+	 
+	 }
+	 
+	  public void runMacro(String macroStr) { Dispatch.call(bzhao, "RunMacro",
+	  macroStr);
+	  
+	  }
+	  
+	  public void runMacro(String macroStr, String macroParmStr) {
+	  Dispatch.call(bzhao, "RunMacro", new Object[] { new Variant(macroStr),
+	  new Variant(macroParmStr) });
+	  
+	  }
+	  
+	  public void runScript(String scriptStr) { Dispatch.call(bzhao,
+	  "RunScript", scriptStr);
+	  
+	  }
+	  
+	 //*/
 
 	// YRJTest: this method sets two value and return a value.
 	/**
@@ -776,10 +776,10 @@ class BlueZoneHAOUtil {
 	}
 
 	/*
-	 * public setBrowserWnd( ) { Variant retValue = Dispatch.call(bzhao,
-	 * "SetBrowserWnd", new Object[] { new Variant( ), new Variant( ) }); return
-	 * retValue.getInt(); } //
-	 */
+	 public setBrowserWnd( ) { Variant retValue = Dispatch.call(bzhao,
+	 "SetBrowserWnd", new Object[] { new Variant( ), new Variant( ) }); return
+	 retValue.getInt(); } 
+	 //*/
 
 	/**
 	 * Sets the text contents of the clipboard from a string.
@@ -1265,20 +1265,20 @@ class BlueZoneHAOUtil {
 	}
 
 	/*
-	public void window() {
-		Variant retValue = Dispatch.call(bzhao, "Window", new Object[] { new Variant(), new Variant() });
-		return retValue.getInt();
-	}
-
-	public void windowHandle() {
-		Dispatch.call(bzhao, "WindowHandle");
-
-	}
-	//*/
+	  public void window() { Variant retValue = Dispatch.call(bzhao, "Window",
+	  new Object[] { new Variant(), new Variant() }); return retValue.getInt();
+	  }
+	 
+	  public void windowHandle() { Dispatch.call(bzhao, "WindowHandle");
+	  
+	  } 
+	 //*/
 
 	/**
 	 * Set the property of the session's window state.
-	 * @param stateVal 0 - normal; 1 - minimize; 2 - maximize
+	 * 
+	 * @param stateVal
+	 *            0 - normal; 1 - minimize; 2 - maximize
 	 */
 	public void setWindowState(int stateVal) {
 		Dispatch.call(bzhao, "WindowState", stateVal);
@@ -1287,6 +1287,7 @@ class BlueZoneHAOUtil {
 
 	/**
 	 * Get the property of the session's window state.
+	 * 
 	 * @return The window's state: 0 - normal; 1 - minimize; 2 - maximize
 	 */
 	public int getWindowState() {
