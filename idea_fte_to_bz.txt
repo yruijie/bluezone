@@ -17,9 +17,11 @@
          
          Pre: 检查case中所有的 Db2AdminTask及扩展类Db2AdminLargeFunction的实例方法，在上述三个类中都有实现。
          
-        
+         
+         
 3) 针对B: 所有的panel都继承自AdminBasePanel类，更新此类的所有方法，显式添加其基类及更向上的类的方法，改为基于BlueZone的调用，
           去除此类的基类及更向上的类，去除所有RFT相关的引用。
+         
          
 4) 针对C: 所有的XXXHelper类都继承自Db2AdminHelper类，更新此类的所有方法，显式添加其基类及更向上的类的方法，改为基于BlueZone的调用，
           去除此类的基类及更向上的类，去除所有RFT相关的引用。
