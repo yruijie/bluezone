@@ -4,4 +4,14 @@
    ADB0NAEA.java. 
    Need to add "ibmjsseprovider2.jar" into Java Build Path, which is in "C:\Program Files (x86)\IBM\SDP\jdk\jre\lib" folder.(or 
    "C:\Program Files (x86)\IBM\Java70\jre\lib" folder)
-4) How to run these scripts:
+4) How to run these test case:
+   a. Eclipse安装testNG plug-in.
+   b. Test case中，添加：
+      import org.testng.annotations.*;
+      import org.testng.asserts.LoggingAssert;
+      import org.testng.Reporter;
+      在类声明之前添加@Test。即public class XYZ extends XYZHelper的前一行。
+       
+   c. Run Configurations -> TsetNG, 新建一个configuration, Project为“AdminOCProj”， Class为“包名.类名”。
+   
+   d. 因为没有安装FTE插件，所以运行不起来
