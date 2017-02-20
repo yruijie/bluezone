@@ -1,0 +1,3 @@
+Db2AdminISPFTask.java: 
+  getTsoUserid() 读取位置：C:\automationspace\terminal\vm27\ecmachines 中：tsoUserid
+  getTsoPassword() 读取位置：C:\automationspace\terminal\vm27\ecmachines 中：tsoPassword的值
