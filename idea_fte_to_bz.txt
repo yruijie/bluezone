@@ -31,3 +31,8 @@
 需要考虑：
   a. JRE的影响。某些脚本中引用IBM JRE独有的类，比如ADB0NAEA.java中引用了com.ibm.jsse2.util.g，来自ibmjsseprovider2.jar
   b. db2admin.util包内除Db2AdminHelper类外还有两个类，某些脚本中会引用这两个类，是否有影响？
+
+
+
+
+--
