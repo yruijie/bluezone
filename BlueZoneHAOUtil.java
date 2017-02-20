@@ -133,10 +133,12 @@ class BlueZoneHAOUtil {
 	 * @param colVal
 	 *            rowVal Specify the new column position.
 	 */
+	/* This method doesn't work under Java
 	public void setCursorColumn(int colVal) {
 		Dispatch.call(bzhao, "CursorColumn", colVal);
 
 	}
+	//*/
 
 	/**
 	 * Get the cursor's row position. This property is 0-Base for VT/6530
@@ -156,9 +158,11 @@ class BlueZoneHAOUtil {
 	 * @param rowVal
 	 *            Specify the new row position.
 	 */
+	/* This method doesn't work under Java
 	public void setCursorRow(int rowVal) {
 		Dispatch.call(bzhao, "CursorRow", rowVal);
 	}
+	//*/
 
 	/**
 	 * Closes an emulation session.
