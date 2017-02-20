@@ -1,11 +1,12 @@
 1）所有的case中只有三种调用：
    A. Db2AdminTask及扩展类Db2AdminLargeFunction的实例方法（可能名为admin，admf001, admf009, secadm）；
    
-      Pre: a. 检查case中是否调用了Db2AdminTask，Db2AdminISPFTask，或ISPFTask的静态方法。
-               注意：引用Db2AdminTask，Db2AdminISPFTask的静态方法无所谓。但引用ISPFTask的静态方法需要更新。
-           b. 检查case中是否存在admin，admf001, admf009, secadm的类型是Db2AdminTask及扩展类Db2AdminLargeFunction这两种类
+      Pre: a. 检查case中是否存在admin，admf001, admf009, secadm的类型是Db2AdminTask及扩展类Db2AdminLargeFunction这两种类
                 以外的类型。
                方法：通过检索 private ... admin(或admf001, admf009, secadm)
+           b. 检查case中是否调用了Db2AdminTask，Db2AdminISPFTask，或ISPFTask的静态方法。
+               注意：引用Db2AdminTask，Db2AdminISPFTask的静态方法无所谓。但引用ISPFTask的静态方法需要更新。
+           
    
    B. 某个panel的实例方法。
    
