@@ -9,3 +9,11 @@
     改为：new Db2AdminTask(getConnFile() )启动BlueZone终端，用C:\Users\Administrator\Documents\BlueZone\Config\XXX.zmd建立连接。
 
 3. 
+
+
+
+
+
+
+
+--
