@@ -19,6 +19,7 @@
                db2admin.task.Db2AdminTask
                db2admin.util.panels. XXXX
                resources ... XXXHelper
+               java....
                      
          
          
