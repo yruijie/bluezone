@@ -6,7 +6,7 @@
    private Db2AdminTask admin = new Db2AdminTask(getConnFile() );
    构造器Db2AdminTask(..)
     作用：启动FTE终端，用C:\Users\Administrator(或当前帐号)\vm27.conn建立到STLVM27点连接。
-    改为：new Db2AdminTask(getConnFile() )启动BlueZone终端，用C:\Users\Administrator\Documents\BlueZone\Config\XXX.zmd建立连接。
+    改为：启动BlueZone终端，用C:\Users\Administrator\Documents\BlueZone\Config\XXX.zmd建立连接。
 
 3. 
 
