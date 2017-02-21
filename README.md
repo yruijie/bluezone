@@ -1,4 +1,5 @@
 用BlueZone和testNG替换RFT和FTE：
+
    (1) BlueZone替换RFT
    
        a. 封装BlueZone Host Automation Object的方法。 -- BlueZoneHAOUtil.java， Done
