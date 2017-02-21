@@ -15,7 +15,7 @@
                注意：引用Db2AdminTask，Db2AdminISPFTask的静态方法无所谓。但引用ISPFTask的静态方法需要更新。
                方法：见c项。
            
-           c. 检查所有case中是否import了下列包以外的类：
+           c. ★★★ 检查所有case中是否import了下列包以外的类：
                db2admin.task.Db2AdminTask
                db2admin.util.panels. XXXX
                resources ... XXXHelper
@@ -54,7 +54,7 @@
   
   b. db2admin.util包内除Db2AdminHelper类外还有两个类AdminTimer，FTP，某些脚本中会引用这两个类，是否有影响？是否需要改动？
   
-  c. 整个Project内的每个包里的脚本，需要过一遍，是否有影响，是否需更新
+  c. 整个Project内的那些test case，XXXHelper，panel以外的比较零散的包里的脚本，需要过一遍，是否有影响，是否需更新
   
   
   
