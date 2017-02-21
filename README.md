@@ -9,8 +9,18 @@
        c. 修改EAGS，改用BlueZone。                    -- Not start
        
        
+       
    (2) testNG替换FTE
 
+       a. case在新框架下run起来，CMD／Eclipse IDE
+
+       b. 每个vefification point写入HTML Log。
+
+       c. 定制Test Result HTML Log
+
+       d. 利用testNG多线程跑case？
+
+       e. 生成的HTML Log，如何让CATS读取？
  
  
  
