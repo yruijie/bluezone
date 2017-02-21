@@ -32,9 +32,11 @@
       Pre: a. 正常的XXXXHelper脚本中是没有import类的。检查所有的XXXXHelper脚本中，是否import了类。
          
 
-5) 处理终端上的内容，集中在ibm.terminal.widgets包内TerminalScreen类中。此类中的方法，类似于BlueZoneHAOUtil类中的方法。
+5) 处理终端上的内容，集中在ibm.terminal.widgets包内TerminalScreen类中(属于FTE_JAVA_TOOLKIT.jar)。此类中的方法，类似于BlueZoneHAOUtil类中的方法。
     改为：用BlueZoneHAOUtil中的方法改写TerminalScreen类中的方法。
-    To do：找一找有没有API文档，关于ibm.terminal.widgets包中的类TerminalScreen
+    To do: 找一找有没有API文档，关于ibm.terminal.widgets包中的类TerminalScreen
+     Done: RFT的安装路径中没有找到，Google上没有找到，developerWorks没有找到。
+     
     To do：TerminalScreen类中的方法太多，找一找有哪些被引用
       方法：查找所有脚本（不限于case）中，getTerminalScreen().XXX方法，或者terminal.XXX方法
            一般TerminalScreen terminal = getTerminalScreen()，会存在terminal以外的名字吗？待确认（通过
