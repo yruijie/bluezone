@@ -15,7 +15,7 @@
                注意：引用Db2AdminTask，Db2AdminISPFTask的静态方法无所谓。但引用ISPFTask的静态方法需要更新。
                方法：见c项。
            
-           c. ★★★ 检查所有case中是否import了下列包以外的类：
+           c. ★★★ 正常情况下一个case中只应该import下列类。检查所有case中是否import了以下类之外的类：
                db2admin.task.Db2AdminTask
                db2admin.util.panels. XXXX
                resources ... XXXHelper
