@@ -1,0 +1,12 @@
+1) import testng相应的类
+    import org.testng.annotations.*;
+    import org.testng.asserts.LoggingAssert;
+    import org.testng.Reporter;
+    
+2) 添加注解
+    在case的public class的前一行添加@Test
+    
+3)     
+Error:
+
+1) 直接在每个case的public class前一行添加
