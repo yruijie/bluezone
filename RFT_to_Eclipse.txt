@@ -33,8 +33,10 @@
      暂时方法：Db2AdminHelper不继承DmtoolsSuperHelper。
               可以使case作为TestNG Test 运行起来。
    
-   e. 
-
-
-
-
+   e. 改脚本：
+      Db2AdminTask
+      Db2AdminLargeFunction
+      Db2AdminISPFTask
+      AdminBasePanel
+      Db2AdminHelper
+      TerminalScreen
