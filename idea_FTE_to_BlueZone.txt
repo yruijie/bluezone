@@ -43,8 +43,10 @@
      
     To do：TerminalScreen类中的方法太多，找一找有哪些被引用
       方法：查找所有脚本（不限于case）中，getTerminalScreen().XXX方法，或者terminal.XXX方法
-           一般TerminalScreen terminal = getTerminalScreen()，会存在terminal以外的名字吗？待确认（通过
+      
+      To do: 一般TerminalScreen terminal = getTerminalScreen()，会存在terminal以外的名字吗？待确认（通过
            查找 “= getTerminalScreen()”确认     ）。
+      Done: 存在。
           
           
           
