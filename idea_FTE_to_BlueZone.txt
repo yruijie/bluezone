@@ -31,6 +31,8 @@
 4) 针对C: 所有的XXXHelper类都继承自Db2AdminHelper类，更新此类的所有方法，显式添加其基类及更向上的类的方法，改为基于BlueZone的调用，
           去除此类的基类及更向上的类，去除所有RFT相关的引用。
       Pre: a. 正常的XXXXHelper脚本中是没有import类的。检查所有的XXXXHelper脚本中，是否import了类。
+   
+   针对XXXHelper：XXX与XXXHelper并不是"is-a"的关系，是否可以去掉继承关系？
          
 
 5) 处理终端上的内容，集中在ibm.terminal.widgets包内TerminalScreen类中(属于FTE_JAVA_TOOLKIT.jar)。此类中的方法，类似于BlueZoneHAOUtil
