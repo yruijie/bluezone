@@ -1,17 +1,30 @@
+假定case名称为XXX，基类向上为： 
+XXX > XXXHelper > Db2AdminHelper >  DmtoolsSuperHelper > RationalTestScript
+
+Db2AdminLargeFunction > Db2AdminTask > Db2AdminISPFTask > ISPFTask > ISPFDriver > TerminalDriver 
+ > DataManagementTask > GenericTerminalTask > TerminalTesterOps > TerminalTesterDynamic
+ > RationalTestScript > SubitemFactory > DatapoolScriptSupport > Object
+
+众多panel的类 > AdminBasePanel > GenericPanel
+
+TerminalScreen:
+TerminalField, TerminalTable > TerminalScreen > TerminalSession > TerminalFrame > TerminalWidget 
+ > GuiTestObject > ClientTestObject > TestObject > TestObject > Object
+
 1. Db2AdminISPFTask.java: 
     getTsoUserid() 读取位置：C:\automationspace\terminal\vm27\ecmachines 中：tsoUserid
     getTsoPassword() 读取位置：C:\automationspace\terminal\vm27\ecmachines 中：tsoPassword的值
   
 2. 每个case里： private Db2AdminTask admin = new Db2AdminTask(getConnFile() );
    
-   Db2AdminTask(String s)调用基类构造器Db2AdminISPFTask（String s）
-    作用：启动FTE终端，用C:\Users\Administrator(或当前帐号)\vm27.conn建立到STLVM27点连接。
-    改为：启动BlueZone终端，用C:\Users\Administrator\Documents\BlueZone\Config\XXX.zmd建立连接。
+   Db2AdminTask(String s)调用基类构造器Db2AdminISPFTask（String s）
+    作用：启动FTE终端，用C:\Users\Administrator(或当前帐号)\vm27.conn建立到STLVM27点连接。
+    改为：启动BlueZone终端，用C:\Users\Administrator\Documents\BlueZone\Config\XXX.zmd建立连接。
     
-   getConnFile()属于dmtoolsShared.DmtoolsSuperHelper类
-    作用：返回字符串XXX.conn
-    暂时改为：写死 “STLVM27.zmd”
-    To do: 改写Db2AdminHelper类，提供此方法
+   getConnFile()属于dmtoolsShared.DmtoolsSuperHelper类
+    作用：返回字符串XXX.conn
+    暂时改为：写死 “STLVM27.zmd”
+    To do: 改写Db2AdminHelper类，提供此方法
  
 
 
