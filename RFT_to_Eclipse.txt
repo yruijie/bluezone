@@ -1,15 +1,20 @@
-1) Import the project:
+1) Copy jacob-1.18-x86.dll to C:\ProgramData\Oracle\Java\javapath
+
+2) Import the project:
    In Eclipse, File -> OpenProjects from File System : select the RTCworkspace folder, import the project "AdminOCProj".
 
-2) Add Jar to Java build path: 
-  Properties for AdminOCProj project-> Java Build Path-> Add External JARs: select all RFT jars to add.
+3) Add Jar to Java build path: 
+  Properties for AdminOCProj project-> Java Build Path-> Add External JARs: 
+    Add all RFT jars;
+    Add jacob.jar;
 
-3) Add a IBM special Jar:
+4) Add a IBM special Jar:
    After AdminOCProj project refreshed, there is still a error: "The import com.ibm.jsse2 cannot be resolved" caused by 
    ADB0NAEA.java. 
    Need to add "ibmjsseprovider2.jar" into Java Build Path, which is in "C:\Program Files (x86)\IBM\SDP\jdk\jre\lib" folder.
    (or "C:\Program Files (x86)\IBM\Java70\jre\lib" folder)
-4) How to run these test case:
+
+5) How to run these test case:
    a. Eclipse安装testNG plug-in.
    
    b. Test case中，import testNG相应的类：
@@ -27,7 +32,7 @@
      ... unable to resolve class reference org/eclipse/emf/common/util/EList ...
      解释： org.eclipse.emf.common.util.EList是Eclipse提供的org.eclipse.emf.common_2.12.0.v20160420-0247.jar里的一个Interface。
           此jar文件应该是RFT和Eclipse默认导入的。
-          假定case名称为XXX，此类的基类向上为： XXX > XXXHelper > Db2AdminHelper >  DmtoolsSuperHelper > RationalTestScript
+          
           RationalTestScript类里有引用org.eclipse.emf.common.util.EList。
           
      暂时方法：Db2AdminHelper不继承DmtoolsSuperHelper。
