@@ -27,7 +27,16 @@ TerminalField, TerminalTable > TerminalScreen > TerminalSession > TerminalFrame 
     To do: 改写Db2AdminHelper类，提供此方法
  
 
-
+改脚本：
+      Db2AdminTask
+      Db2AdminLargeFunction
+      Db2AdminISPFTask
+      AdminBasePanel
+      Db2AdminHelper
+      TerminalScreen  
+         On-going. 被引用到的方法签名已经完成（共66个，不算构造器）。
+                   还剩：此类还引用了四个其他类，放在什么地方合适？
+                   TerminalField，TerminalInputField，TerminalTable，TextDescriptor。
 
 
 
