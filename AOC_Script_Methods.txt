@@ -35,7 +35,7 @@ TerminalField, TerminalTable > TerminalScreen > TerminalSession > TerminalFrame 
       Db2AdminHelper
       TerminalScreen  
          On-going. 被引用到的方法签名已经完成（共66个，不算构造器）。
-                   还剩：此类还引用了四个其他类，放在什么地方合适？
+                   还剩：此类还引用了四个其他类，放在什么地方合适？(同一个包内，还是写成TerminalScreen的内部类？)
                    TerminalField，TerminalInputField，TerminalTable，TextDescriptor。
 
 
