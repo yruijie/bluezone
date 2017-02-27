@@ -7,7 +7,9 @@
     
 2) 针对A: 不去管那些繁杂的继承关系：只更新Db2AdminTask，Db2AdminLargeFunction，Db2AdminISPFTask（显式添加从ISPFTask继承的方法）的
           所有方法，改为基于BlueZone的调用，去除Db2AdminISPFTask的基类及更向上的类，去除所有RFT相关的引用。
-         
+      
+      To do：Db2AdminISPFTask 类及其基类中的方法太多，找一找有哪些被引用   
+      
       Pre: a. 检查case中是否存在admin，admf001, admf009, secadm的类型是Db2AdminTask及扩展类Db2AdminLargeFunction这两种类
                 以外的类型。
                方法：通过检索 private ... admin(或admf001, admf009, secadm)
@@ -26,6 +28,7 @@
 3) 针对B: 所有的panel都继承自AdminBasePanel类，更新此类的所有方法，显式添加其基类及更向上的类的方法，改为基于BlueZone的调用，
           去除此类的基类及更向上的类，去除所有RFT相关的引用。
       Pre: a. 检查所有panel的脚本中，是否 import ibm.terminal.widgets.TerminalScreen 以外的类
+              On-going. 有一些panel引用并直接继承了GenericPanel类
       
       
 4) 针对C: 所有的XXXHelper类都继承自Db2AdminHelper类，更新此类的所有方法，显式添加其基类及更向上的类的方法，改为基于BlueZone的调用，
@@ -39,15 +42,17 @@
    类中的方法。
     改为：用BlueZoneHAOUtil中的方法改写TerminalScreen类中的方法。
     To do: 找一找有没有API文档，关于ibm.terminal.widgets包中的类TerminalScreen
-     Done: RFT的安装路径中没有找到，Google上没有找到，developerWorks没有找到。
+    Done: RFT的安装路径中没有找到，Google上没有找到，developerWorks没有找到。
      
-    To do：TerminalScreen类中的方法太多，找一找有哪些被引用
-      方法：查找所有脚本（不限于case）中，getTerminalScreen().XXX方法，或者terminal.XXX方法，或者ts.XXX方法
-      Done: 见“TerminalScreen类被用到的方法.txt”
-      
-      To do: 一般TerminalScreen terminal = getTerminalScreen()，会存在terminal以外的名字吗？待确认（通过
+    To do: 一般TerminalScreen terminal = getTerminalScreen()，会存在terminal以外的名字吗？待确认（通过
            查找 “= getTerminalScreen()”确认     ）。
       Done: 存在。一共有2个TerminalScreen类型的变量名字：ts和terminal
+    
+    To do：TerminalScreen类中的方法太多，找一找有哪些被引用
+      方法：查找所有脚本（不限于case）中，getTerminalScreen().XXX方法，或者terminal.XXX方法，或者ts.XXX方法
+    Done: 见“TerminalScreen类被用到的方法.txt”。已完成TerminalScrren类的方法签名。
+      
+      
           
           
           
