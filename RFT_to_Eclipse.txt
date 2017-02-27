@@ -44,4 +44,6 @@
       Db2AdminISPFTask
       AdminBasePanel
       Db2AdminHelper
-      TerminalScreen
+      TerminalScreen  
+         On-going. 被引用到的方法签名已经完成，但此类还引用了四个其他类，放在什么地方合适？TerminalField，TerminalInputField，
+                     TerminalTable，TextDescriptor。
