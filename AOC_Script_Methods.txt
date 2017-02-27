@@ -32,6 +32,7 @@ TerminalField, TerminalTable > TerminalScreen > TerminalSession > TerminalFrame 
       Db2AdminLargeFunction
       Db2AdminISPFTask
       AdminBasePanel
+         接下来改这个。还有众多panel直接继承了GenericPanel，改为继承AdminBasePanel
       Db2AdminHelper
       TerminalScreen  
          On-going. 被引用到的方法签名已经完成（共66个，不算构造器）。
