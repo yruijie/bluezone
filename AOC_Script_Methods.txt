@@ -6,7 +6,7 @@ Db2AdminLargeFunction > Db2AdminTask > Db2AdminISPFTask > ISPFTask > ISPFDriver 
  > RationalTestScript > SubitemFactory > DatapoolScriptSupport > Object
 
 众多panel的类 > AdminBasePanel > GenericPanel
-
+（但有很多直接继承GenericPanel的panel类）
 TerminalScreen:
 TerminalField, TerminalTable > TerminalScreen > TerminalSession > TerminalFrame > TerminalWidget 
  > GuiTestObject > ClientTestObject > TestObject > TestObject > Object
