@@ -250,7 +250,7 @@ class BlueZoneHAOUtil {
 	 * @return The text retrieved from the clipboard.
 	 */
 	public String getClipboardText() {
-		Variant retValue = Dispatch.call(bzhao, "GetClipboardText", new Object[] { new Variant(), new Variant() });
+		Variant retValue = Dispatch.call(bzhao, "GetClipboardText");
 		return retValue.toString();
 	}
 
