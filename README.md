@@ -6,7 +6,7 @@
        
        b. 修改脚本（不只test case）中与RFT相关的部分.    -- Ongoing. idea_FTE_to_BlueZone.txt
        
-       c. 修改EAGS，改用BlueZone。                    -- Not start
+       c. 修改EAGS，改用BlueZone。                    -- Ongoing.
        
        
        
